@@ -1,6 +1,8 @@
 {
   "data": {
     "topic": {
+      "name": "Animals",
+      "description": "Animals are a clade of Apoikozoa as sister of the Choanoflagellates and consists of the Porifera and the Eumetazoa.",
       "articles": {
         "count": 10,
         "list": [

@@ -6,7 +6,7 @@ import { TopicHeadProvider } from "../src/provider";
 
 const pageSize = 5;
 
-const mocks = fixtureGenerator.makeTopicArticleMocks({ delay: 0 });
+const mocks = fixtureGenerator.makeTopicHeadMocks({ delay: 0 });
 
 const renderComponent = child =>
   renderer.create(

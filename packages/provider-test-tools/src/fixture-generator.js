@@ -3,7 +3,8 @@ import {
   authorProfileQuery,
   articleListNoImagesQuery,
   articleListWithImagesQuery,
-  topicArticlesQuery
+  topicArticlesQuery,
+  topicHeadQuery
 } from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
@@ -32,11 +33,17 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = ({ count = 10 } = {}) => ({
+const makeTopicArticles = ({ count = 10 } = {}) => ({
   articles: {
     count,
     __typename: "Articles"
   },
+  __typename: "Topic"
+});
+
+const makeTopicHead = ({ slug }) => ({
+  name: topicFixture.data.topic.name,
+  description: topicFixture.data.topic.description,
   __typename: "Topic"
 });
 
@@ -92,7 +99,7 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
   }
 });
 
-const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
+const makeTopicArticlesMock = ({ count, slug, delay = 1000 }) => ({
   delay,
   request: {
     query: addTypenameToDocument(topicArticlesQuery),
@@ -103,11 +110,28 @@ const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
   result: {
     data: {
       topic: {
-        ...makeTopic({ count })
+        ...makeTopicArticles({ count })
       }
     }
   }
 });
+
+const makeTopicHeadMock = ({ slug, delay = 1000 }) => ({
+  delay,
+  request: {
+    query: addTypenameToDocument(topicHeadQuery),
+    variables: {
+      slug
+    }
+  },
+  result: {
+    data: {
+      topic: {
+        ...makeTopicHead({ slug })
+      }
+    }
+  }
+})
 
 const query = ({ withImages }) =>
   addTypenameToDocument(
@@ -187,7 +211,7 @@ const makeTopicArticleMocks = (
   } = {},
   transform
 ) => [
-  makeTopicMock({ count, withImages, slug }),
+  makeTopicArticlesMock({ count, withImages, slug }),
   ...new Array(Math.ceil(count / pageSize)).fill(0).map((item, indx) => ({
     delay,
     request: {
@@ -209,6 +233,28 @@ const makeTopicArticleMocks = (
     )
   }))
 ];
+
+const makeTopicHeadMocks = (
+  {
+    slug = "chelsea"
+  } = {},
+  transform
+) => [
+  makeTopicHeadMock({ slug }),
+  {
+    delay,
+    request: {
+      query: addTypenameToDocument(topicHeadQuery),
+      variables: makeVariables({
+        slug
+      })
+    },
+    result: makeTopicHead(
+      {},
+      transform
+    )
+  }
+]
 
 const makeBrokenMocks = ({ count, withImages, pageSize }) =>
   makeArticleMocks({ count, withImages, pageSize }, list =>
@@ -284,5 +330,6 @@ export default {
   makeBrokenMocks,
   makeMocksWithPageError,
   makeMocksWithAuthorError,
-  makeTopicArticleMocks
+  makeTopicArticleMocks,
+  makeTopicHeadMocks
 };

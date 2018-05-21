@@ -9,8 +9,9 @@ import { fixtureGenerator } from "@times-components/provider-test-tools";
 import connectGraphql, {
   AuthorProfileProvider,
   ArticleProvider,
+  AuthorArticlesWithImagesProvider,
   TopicArticlesProvider,
-  AuthorArticlesWithImagesProvider
+  TopicHeadProvider
 } from "./src/provider.js";
 import { query as authorProfileQuery } from "./src/author-profile";
 import { query as articleQuery } from "./src/article";
@@ -193,6 +194,23 @@ export default {
             </TopicArticlesProvider>
           </MockedProvider>
         );
+      }
+    },
+    {
+      type: "story",
+      name: "Topic Head",
+      component: () => {
+        const mocks = fixtureGenerator.makeTopicHeadMocks({
+          delay: 0
+        });
+        return (<MockedProvider mocks={mocks}>
+          <TopicHeadProvider
+            slug="chelsea"
+            debounceTimeMs={0}
+          >
+            {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+          </TopicHeadProvider>
+          </MockedProvider>);
       }
     }
   ]

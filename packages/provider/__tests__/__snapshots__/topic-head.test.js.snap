@@ -1,3 +1,4 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopicHeadProvider returns query result 1`] = `undefined`;
+exports[`TopicHeadProvider returns query result 1`] = `Object {
+}`;
