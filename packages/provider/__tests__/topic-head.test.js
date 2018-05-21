@@ -2,31 +2,22 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { MockedProvider } from "@times-components/utils";
 import { fixtureGenerator } from "@times-components/provider-test-tools";
-import { TopicArticlesProvider } from "../src/provider";
+import { TopicHeadProvider } from "../src/provider";
 
 const pageSize = 5;
 
-const mocks = fixtureGenerator.makeTopicArticleMocks({
-  withImages: true,
-  pageSize,
-  delay: 0
-});
+const mocks = fixtureGenerator.makeTopicArticleMocks({ delay: 0 });
 
 const renderComponent = child =>
   renderer.create(
     <MockedProvider mocks={mocks}>
-      <TopicArticlesProvider
-        slug="chelsea"
-        pageSize={pageSize}
-        page={1}
-        debounceTimeMs={0}
-      >
+      <TopicHeadProvider debounceTimeMs={0} slug="chelsea">
         {child}
-      </TopicArticlesProvider>
+      </TopicHeadProvider>
     </MockedProvider>
   );
 
-describe("TopicProvider", () => {
+describe("TopicHeadProvider", () => {
   it("returns query result", done => {
     renderComponent(({ isLoading, topic }) => {
       if (!isLoading) {

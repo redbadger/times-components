@@ -11,6 +11,7 @@ import ArticleProvider, { query as articleQuery } from "./article";
 import TopicArticlesProvider, {
   query as topicArticlesQuery
 } from "./topic-articles";
+import TopicHeadProvider, { query as topicHeadQuery }  from './topic-head';
 
 export default connect;
 
@@ -24,5 +25,7 @@ export {
   articleListNoImagesQuery,
   articleListWithImagesQuery,
   TopicArticlesProvider,
-  topicArticlesQuery
+  topicArticlesQuery,
+  TopicHeadProvider,
+  topicHeadQuery
 };
