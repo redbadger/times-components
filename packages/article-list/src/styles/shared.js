@@ -33,13 +33,14 @@ const styles = {
   },
   listErrorMessage: {
     color: colours.functional.secondary,
-    fontFamily: fonts.bodyRegular,
+    fontFamily: fonts.body,
     fontSize: fontSizes.body,
     textAlign: "center"
   },
   listErrorButtonContainer: {
     bottom: 0,
     position: "absolute",
+    justifyContent: "center",
     width: "100%"
   },
   listErrorButton: {
@@ -47,6 +48,7 @@ const styles = {
     backgroundColor: colours.functional.action,
     flex: 1,
     justifyContent: "center",
+    width: 165,
     height: 36
   },
   listErrorButtonText: {
