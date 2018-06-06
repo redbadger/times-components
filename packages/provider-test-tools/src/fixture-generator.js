@@ -3,13 +3,12 @@ import {
   authorProfileQuery,
   articleListNoImagesQuery,
   articleListWithImagesQuery,
-  topicQuery,
-  topicArticlesQuery
+  topicQuery
 } from "@times-components/provider";
 import authorProfileFixture from "../fixtures/author-profile/author-profile.json";
 import articleListWithImagesFixture from "../fixtures/author-profile/article-list-with-images.json";
 import articleListNoImagesFixture from "../fixtures/author-profile/article-list-no-images.json";
-import topicFixture from "../fixtures/topic-articles.json";
+import topicFixture from "../fixtures/topic.json";
 
 const makeAuthor = ({ count = 20, withImages } = {}) => {
   if (withImages) {
@@ -33,12 +32,6 @@ const makeAuthor = ({ count = 20, withImages } = {}) => {
   };
 };
 
-const makeTopic = () => ({
-  name: "Chelsea",
-  description: "A swanky part of town.",
-  __typename: "Topic"
-});
-
 const makeArticleList = ({ skip, first, withImages }, transform = id => id) => {
   const articles = withImages
     ? articleListWithImagesFixture.data.author.articles
@@ -61,17 +54,10 @@ const makeTopicArticleList = ({ skip, first }, transform = id => id) => {
   const { articles } = topicFixture.data.topic;
 
   return {
-    data: {
-      topic: {
-        articles: {
-          ...articles,
-          list: transform(articles.list.slice(skip, skip + first)),
-          __typename: "Articles"
-        },
-        __typename: "Topic"
-      }
-    }
-  };
+    ...articles,
+    list: transform(articles.list.slice(skip, skip + first)),
+    __typename: "Articles"
+  }
 };
 
 const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
@@ -86,23 +72,6 @@ const makeAuthorMock = ({ count, withImages, slug, delay = 1000 }) => ({
     data: {
       author: {
         ...makeAuthor({ count, withImages })
-      }
-    }
-  }
-});
-
-const makeTopicMock = ({ count, slug, delay = 1000 }) => ({
-  delay,
-  request: {
-    query: addTypenameToDocument(topicQuery),
-    variables: {
-      slug
-    }
-  },
-  result: {
-    data: {
-      topic: {
-        ...makeTopic({ count })
       }
     }
   }
@@ -176,7 +145,7 @@ const makeArticleMocks = (
   }))
 ];
 
-const makeTopicArticleMocks = (
+const makeTopicMocks = (
   {
     count = 10,
     pageSize = 5,
@@ -186,11 +155,10 @@ const makeTopicArticleMocks = (
   } = {},
   transform
 ) => [
-  makeTopicMock({ count, withImages, slug }),
   ...new Array(Math.ceil(count / pageSize)).fill(0).map((item, indx) => ({
     delay,
     request: {
-      query: addTypenameToDocument(topicArticlesQuery),
+      query: addTypenameToDocument(topicQuery),
       variables: makeVariables({
         withImages,
         skip: indx * pageSize,
@@ -198,14 +166,23 @@ const makeTopicArticleMocks = (
         slug
       })
     },
-    result: makeTopicArticleList(
-      {
-        skip: indx * pageSize,
-        first: pageSize,
-        withImages
-      },
-      transform
-    )
+    result: {
+      data: {
+        topic: {
+          name: "Chelsea",
+          description: "A swanky part of town.",
+          articles: makeTopicArticleList(
+            {
+              skip: indx * pageSize,
+              first: pageSize,
+              withImages
+            },
+            transform
+          ),
+          __typename: "Topic"
+        }
+      }
+    }
   }))
 ];
 
@@ -275,24 +252,28 @@ const makeMocksWithAuthorError = ({ withImages, slug, pageSize }) => {
 };
 
 const makeMocksWithTopicError = ({ withImages, slug, pageSize }) => {
-  const [, ...articles] = makeTopicArticleMocks({
+  const validResponse = makeTopicMocks({
     withImages,
     slug,
     pageSize
   });
 
+  console.log(validResponse);
+
   return [
     {
       request: {
         query: addTypenameToDocument(topicQuery),
-        variables: {
+        variables: makeVariables({
+          withImages,
+          skip: 0,
+          pageSize,
           slug
-        }
+        })
       },
       error: new Error("Could not get topic")
     },
-    makeTopicMock({ withImages, slug }),
-    ...articles
+    ...validResponse
   ];
 };
 
@@ -305,6 +286,6 @@ export default {
   makeBrokenMocks,
   makeMocksWithPageError,
   makeMocksWithAuthorError,
-  makeTopicArticleMocks,
+  makeTopicMocks,
   makeMocksWithTopicError
 };

@@ -11,8 +11,7 @@ import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,
   AuthorArticlesWithImagesProvider,
-  TopicProvider,
-  TopicArticlesProvider
+  TopicProvider
 } from "./src/provider.js";
 import { query as articleQuery } from "./src/article";
 import { query as authorProfileQuery } from "./src/author-profile";
@@ -179,46 +178,20 @@ export default {
       type: "story",
       name: "Topic",
       component: () => {
-        const mocks = [
-          {
-            request: {
-              query: addTypenameToDocument(topicQuery),
-              variables: {
-                slug: "chelsea"
-              }
-            },
-            result: topicFixture
-          }
-        ];
-
-        return (
-          <MockedProvider mocks={mocks}>
-            <TopicProvider slug="chelsea" debounceTimeMs={0}>
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </TopicProvider>
-          </MockedProvider>
-        );
-      }
-    },
-    {
-      type: "story",
-      name: "Topic Articles",
-      component: () => {
-        const mocks = fixtureGenerator.makeTopicArticleMocks({
+        const mocks = fixtureGenerator.makeTopicMocks({
           withImages: true,
           pageSize: 5,
           delay: 0
         });
+
         return (
           <MockedProvider mocks={mocks}>
-            <TopicArticlesProvider
-              slug="chelsea"
-              pageSize={5}
+            <TopicProvider slug="chelsea" pageSize={5}
               page={1}
               debounceTimeMs={0}
             >
               {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
-            </TopicArticlesProvider>
+            </TopicProvider>
           </MockedProvider>
         );
       }

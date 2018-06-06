@@ -21,17 +21,18 @@ const preventDefaultedAction = decorateAction =>
 const pageSize = 5;
 const slug = "chelsea";
 
+const mocks = fixtureGenerator.makeTopicMocks({
+  pageSize,
+  withImages: true,
+  delay: 0
+});
+
 const getProps = decorateAction => ({
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   page: 1,
   pageSize,
   slug
-});
-
-const mocks = fixtureGenerator.makeTopicArticleMocks({
-  withImages: true,
-  pageSize
 });
 
 export default {
@@ -42,7 +43,12 @@ export default {
       name: "Default",
       component: (_, { decorateAction }) => (
         <StorybookProvider mocks={mocks}>
-          <TopicProvider debounceTimeMs={0} slug={slug}>
+          <TopicProvider
+            page={1}
+            pageSize={pageSize}
+            debounceTimeMs={0}
+            slug={slug}
+          >
             {({ topic, error, isLoading }) => (
               <Topic
                 {...getProps(decorateAction)}
@@ -68,14 +74,20 @@ export default {
       type: "story",
       name: "With an error getting Topic",
       component: (_, { decorateAction }) => (
-        <MockedProvider
+        <StorybookProvider
           mocks={fixtureGenerator.makeMocksWithTopicError({
             pageSize,
             slug,
-            withImages: true
+            withImages: true,
+            delay: 0
           })}
         >
-          <TopicProvider debounceTimeMs={0} slug={slug}>
+          <TopicProvider
+            page={1}
+            pageSize={pageSize}
+            debounceTimeMs={0}
+            slug={slug}
+          >
             {({ topic, error, isLoading, refetch }) => (
               <Topic
                 {...getProps(decorateAction)}
@@ -86,7 +98,7 @@ export default {
               />
             )}
           </TopicProvider>
-        </MockedProvider>
+        </StorybookProvider>
       )
     }
   ]

@@ -22,7 +22,7 @@ export default () => {
     const pageSize = 3;
     const tree = renderer.create(
       <MockedProvider
-        mocks={fixtureGenerator.makeTopicArticleMocks({
+        mocks={fixtureGenerator.makeTopicMocks({
           pageSize,
           withImages: true
         })}

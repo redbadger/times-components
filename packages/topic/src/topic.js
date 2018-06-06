@@ -4,7 +4,7 @@ import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
 import { withPageState } from "@times-components/pagination";
-import { TopicArticlesProvider } from "@times-components/provider";
+import { TopicProvider } from "@times-components/provider";
 import { ratioTextToFloat } from "@times-components/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
@@ -47,7 +47,7 @@ const Topic = ({
   );
 
   return (
-    <TopicArticlesProvider
+    <TopicProvider
       articleImageRatio="3:2"
       debounceTimeMs={250}
       page={page}
@@ -104,7 +104,7 @@ const Topic = ({
           />
         );
       }}
-    </TopicArticlesProvider>
+    </TopicProvider>
   );
 };
 

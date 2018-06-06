@@ -13,7 +13,7 @@ export default () => {
   const pageSize = 3;
   const slug = "chelsea";
 
-  const mockArticles = fixtureGenerator.makeTopicArticleMocks({
+  const mockArticles = fixtureGenerator.makeTopicMocks({
     pageSize,
     withImages: true
   });
