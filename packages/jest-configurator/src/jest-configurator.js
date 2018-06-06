@@ -64,7 +64,7 @@ const platformCode = platform => {
 export default (
   platform: Platform,
   cwd: string,
-  coverageIgnoreGlobs: Array<string>
+  { coverageIgnoreGlobs, setupTestFrameworkScriptFile } = {}
 ) => {
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
@@ -75,7 +75,7 @@ export default (
 
   const platformPath = platform ? `${platform}/` : "";
 
-  return {
+  const config = {
     preset: "react-native",
     ...platformCode(platform),
     rootDir,
@@ -96,13 +96,15 @@ export default (
     testPathIgnorePatterns: [
       `${module}/__tests__/${platformPath}jest.config.js`
     ],
-    snapshotSerializers: [
-      "enzyme-to-json/serializer",
-      "@times-components/jest-serializer"
-    ],
     setupFiles: [
       path.resolve(__dirname, "../setup-jest.js"),
       "jest-plugin-context/setup"
     ]
   };
+
+  if (setupTestFrameworkScriptFile) {
+    config.setupTestFrameworkScriptFile = setupTestFrameworkScriptFile;
+  }
+
+  return config;
 };
