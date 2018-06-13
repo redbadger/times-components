@@ -12,6 +12,6 @@ module.exports = {
   transformIgnorePatterns: [
     "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
   ],
-  testMatch: [`**/__tests__/ios/minimal.test.js`],
+  testMatch: [`**/jest-serializer/__tests__/ios/**.test.js`],
   rootDir: "../../"
 };

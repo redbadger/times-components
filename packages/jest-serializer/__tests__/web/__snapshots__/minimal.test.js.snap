@@ -7,7 +7,11 @@ exports[`The minimal serializer should for web not remove className 1`] = `
 />
 `;
 
-exports[`The minimal serializer should for web remove d-prop from path 1`] = `<path />`;
+exports[`The minimal serializer should for web remove d-prop from path 1`] = `
+<path
+  style={Object {}}
+/>
+`;
 
 exports[`The minimal serializer should for web remove functions as props 1`] = `
 <div

@@ -6,15 +6,23 @@ exports[`The minimal serializer should for native not remove styles 1`] = `
   allowFontScaling={true}
   ellipsizeMode="tail"
   style={
-    Object {
-      "color": "red",
-      "padding": 1,
-    }
+    Array [
+      Object {
+        "color": "red",
+      },
+      Object {
+        "padding": 1,
+      },
+    ]
   }
 />
 `;
 
-exports[`The minimal serializer should for native remove d-prop from path 1`] = `<path />`;
+exports[`The minimal serializer should for native remove d-prop from path 1`] = `
+<path
+  style={Object {}}
+/>
+`;
 
 exports[`The minimal serializer should for native remove functions as props 1`] = `
 <View>

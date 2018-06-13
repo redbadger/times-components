@@ -1,8 +1,11 @@
 import minimalise from "./minimalise";
 import { transformProps as rnwTransform, printer as rnwPrinter } from "./rnw";
+import flattenStyleTransform from "./flatten-style";
 import traverse from "./traverse";
 
 const print = (serialize, accum, element) => serialize(element);
+
+const flattenStyle = traverse(flattenStyleTransform, print);
 
 const minimalWebTransform = minimalise(
   value => value === undefined || typeof value === "function"
@@ -40,6 +43,8 @@ const minimalRnw = includeStyleProps =>
 
 export {
   compose,
+  flattenStyle,
+  flattenStyleTransform,
   minimalNative,
   minimalNativeTransform,
   minimalRnw,
