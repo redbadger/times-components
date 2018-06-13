@@ -7,15 +7,22 @@ const print = (serialize, accum, element) => serialize(element);
 
 const flattenStyle = traverse(flattenStyleTransform, print);
 
+const isEmptyObject = obj =>
+  obj && typeof obj === "object" && Object.keys(obj).length === 0;
+
 const minimalWebTransform = minimalise(
-  value => value === undefined || typeof value === "function"
+  value =>
+    value === undefined || typeof value === "function" || isEmptyObject(value)
 );
 
 const minimalWeb = traverse(minimalWebTransform, print);
 
 const minimalNativeTransform = minimalise(
   (value, key) =>
-    value === undefined || typeof value === "function" || key === "className"
+    value === undefined ||
+    typeof value === "function" ||
+    key === "className" ||
+    isEmptyObject(value)
 );
 
 const minimalNative = traverse(minimalNativeTransform, print);

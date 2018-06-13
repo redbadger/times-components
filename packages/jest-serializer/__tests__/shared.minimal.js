@@ -51,4 +51,15 @@ export default () => {
     const tree = renderer.create(<DummyRenderer />);
     expect(tree.toJSON()).toMatchSnapshot();
   });
+
+  it("remove empty objects as props", () => {
+    const DummyRenderer = () => (
+      <View>
+        <Text test={{}} />
+      </View>
+    );
+
+    const tree = renderer.create(<DummyRenderer />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
 };

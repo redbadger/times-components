@@ -18,10 +18,16 @@ exports[`The minimal serializer should for native not remove styles 1`] = `
 />
 `;
 
-exports[`The minimal serializer should for native remove d-prop from path 1`] = `
-<path
-  style={Object {}}
-/>
+exports[`The minimal serializer should for native remove d-prop from path 1`] = `<path />`;
+
+exports[`The minimal serializer should for native remove empty objects as props 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  />
+</View>
 `;
 
 exports[`The minimal serializer should for native remove functions as props 1`] = `
