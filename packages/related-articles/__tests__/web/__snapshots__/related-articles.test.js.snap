@@ -34,10 +34,18 @@ exports[`2a. Standard template: Render a single related article 1`] = `
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gXpqxK"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ ctBJPW"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
             style={
@@ -46,9 +54,13 @@ exports[`2a. Standard template: Render a single related article 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -94,7 +106,9 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -114,6 +128,7 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -121,6 +136,7 @@ exports[`2a. Standard template: Render a single related article 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -240,10 +256,18 @@ exports[`3a. Standard template: Render two related articles 1`] = `
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ bPSGS"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ ctBJPW"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
             style={
@@ -252,9 +276,13 @@ exports[`3a. Standard template: Render two related articles 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -300,7 +328,9 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -318,6 +348,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -325,6 +356,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -379,8 +411,12 @@ exports[`3a. Standard template: Render two related articles 1`] = `
             </div>
           </a>
         </div>
-        <div />
-        <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gGwGBx"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
             style={
@@ -389,9 +425,13 @@ exports[`3a. Standard template: Render two related articles 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -437,7 +477,9 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -455,6 +497,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -462,6 +505,7 @@ exports[`3a. Standard template: Render two related articles 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -575,10 +619,18 @@ exports[`4a. Standard template: Render three related articles 1`] = `
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ eYyORs"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ iGSTrI"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh"
             style={
@@ -587,9 +639,13 @@ exports[`4a. Standard template: Render three related articles 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -635,7 +691,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -653,6 +711,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -660,6 +719,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -677,6 +737,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         </span>
                       </div>
                       <div
+                        className="summaryHidden summary145Class"
                         dir="auto"
                         style={
                           Object {
@@ -731,8 +792,12 @@ exports[`4a. Standard template: Render three related articles 1`] = `
             </div>
           </a>
         </div>
-        <div />
-        <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gGwGBx"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
             style={
@@ -741,9 +806,13 @@ exports[`4a. Standard template: Render three related articles 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -789,7 +858,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -807,6 +878,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -814,6 +886,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -835,6 +908,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         </span>
                       </div>
                       <div
+                        className="summaryHidden summary145Class"
                         dir="auto"
                         style={
                           Object {
@@ -898,8 +972,12 @@ exports[`4a. Standard template: Render three related articles 1`] = `
             </div>
           </a>
         </div>
-        <div />
-        <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gGwGBx"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ imJBCY"
+        >
           <a
             href="https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx"
             style={
@@ -908,9 +986,13 @@ exports[`4a. Standard template: Render three related articles 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="imageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -956,7 +1038,9 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="contentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -974,6 +1058,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="headlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -981,6 +1066,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden summary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -1002,6 +1088,7 @@ exports[`4a. Standard template: Render three related articles 1`] = `
                         </span>
                       </div>
                       <div
+                        className="summaryHidden summary145Class"
                         dir="auto"
                         style={
                           Object {
@@ -1127,10 +1214,18 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ hsUQMm"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ kGRorH"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ dtmPU"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -1139,9 +1234,13 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="leadImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -1187,7 +1286,9 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="leadContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -1204,6 +1305,7 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     </div>
                     <h3
                       aria-level="3"
+                      className="leadHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -1211,6 +1313,7 @@ exports[`5a. Lead and two template: Render one lead related article 1`] = `
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden leadSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -1308,10 +1411,18 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ hsUQMm"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ fDwlpY"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ lmpbcp"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -1320,9 +1431,13 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="leadImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -1368,7 +1483,9 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="leadContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -1385,6 +1502,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     </div>
                     <h3
                       aria-level="3"
+                      className="leadHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -1392,6 +1510,7 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden leadSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -1441,9 +1560,15 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
             </div>
           </a>
         </div>
-        <div />
-        <div>
-          <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gKbJMP"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ gadeVS"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ epCUKm"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
               style={
@@ -1452,9 +1577,13 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -1500,7 +1629,9 @@ exports[`6a. Lead and two template: Render one lead and one support related arti
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
@@ -1611,10 +1742,18 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gIhviA"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ fDwlpY"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ fznWRP"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -1623,9 +1762,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="leadImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -1671,7 +1814,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="leadContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -1688,6 +1833,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     </div>
                     <h3
                       aria-level="3"
+                      className="leadHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -1695,6 +1841,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden leadSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -1712,6 +1859,7 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                         </span>
                       </div>
                       <div
+                        className="summaryHidden leadSummary175Class"
                         dir="auto"
                         style={
                           Object {
@@ -1761,9 +1909,15 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
             </div>
           </a>
         </div>
-        <div />
-        <div>
-          <div>
+        <div
+          className="responsive-styles__component-fbPFZZ gKbJMP"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ gadeVS"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ epCUKm"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/take-expensive-trident-out-of-mod-budget-hammond-urged-ztsxlskj2"
               style={
@@ -1772,9 +1926,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -1820,7 +1978,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
@@ -1875,7 +2035,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
               </div>
             </a>
           </div>
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ cXWbIz"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
               style={
@@ -1884,9 +2046,13 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -1932,7 +2098,9 @@ exports[`7a. Lead and two template: Render one lead and two support related arti
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
@@ -2050,10 +2218,18 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ gFJTdi"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ hNlqCh"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ djxFcS"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -2062,9 +2238,13 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="opinionContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -2081,6 +2261,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                       </div>
                     </div>
                     <div
+                      className="opinionBylineClass"
                       dir="auto"
                       style={
                         Object {
@@ -2101,6 +2282,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     </div>
                     <h3
                       aria-level="3"
+                      className="opinionHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -2108,6 +2290,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden opinionSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -2125,6 +2308,7 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                         </span>
                       </div>
                       <div
+                        className="summaryHidden opinionSummary160Class"
                         dir="auto"
                         style={
                           Object {
@@ -2156,7 +2340,9 @@ exports[`8a. Opinion and two template: Render one opinion related article 1`] = 
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="opinionImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -2254,10 +2440,18 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ iQvhcy"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ ksbOZK"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ cmZIbJ"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -2266,9 +2460,13 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="opinionContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -2285,6 +2483,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       </div>
                     </div>
                     <div
+                      className="opinionBylineClass"
                       dir="auto"
                       style={
                         Object {
@@ -2305,6 +2504,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     </div>
                     <h3
                       aria-level="3"
+                      className="opinionHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -2312,6 +2512,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden opinionSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -2329,6 +2530,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         </span>
                       </div>
                       <div
+                        className="summaryHidden opinionSummary145Class"
                         dir="auto"
                         style={
                           Object {
@@ -2346,6 +2548,7 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                         </span>
                       </div>
                       <div
+                        className="summaryHidden opinionSummary225Class"
                         dir="auto"
                         style={
                           Object {
@@ -2377,7 +2580,9 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="opinionImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -2427,9 +2632,15 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
             </div>
           </a>
         </div>
-        <div />
-        <div>
-          <div>
+        <div
+          className="responsive-styles__component-fbPFZZ cKGcRr"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ hMmSpV"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ thYDh"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
               style={
@@ -2438,9 +2649,13 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -2486,7 +2701,9 @@ exports[`9a. Opinion and two template: Render one opinion and one support relate
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
@@ -2597,10 +2814,18 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
       Related articles
     </h3>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="responsive-styles__component-fbPFZZ iZVkJC"
+  >
+    <div
+      className="responsive-styles__component-fbPFZZ kxvYBm"
+    >
+      <div
+        className="responsive-styles__component-fbPFZZ jQaUVA"
+      >
+        <div
+          className="responsive-styles__component-fbPFZZ fwjoDc"
+        >
           <a
             href="https://www.uat-thetimes.co.uk/article/defence-of-the-realm-282pmmb7t"
             style={
@@ -2609,9 +2834,13 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
               }
             }
           >
-            <div>
+            <div
+              className="responsive-styles__component-fbPFZZ woNlo"
+            >
               <div>
-                <div>
+                <div
+                  className="opinionContentContainerClass"
+                >
                   <div>
                     <div>
                       <div
@@ -2628,6 +2857,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                     </div>
                     <div
+                      className="opinionBylineClass"
                       dir="auto"
                       style={
                         Object {
@@ -2648,6 +2878,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     </div>
                     <h3
                       aria-level="3"
+                      className="opinionHeadlineClass"
                       dir="auto"
                       role="heading"
                     >
@@ -2655,6 +2886,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     </h3>
                     <div>
                       <div
+                        className="summaryHidden opinionSummary125Class"
                         dir="auto"
                         style={
                           Object {
@@ -2672,6 +2904,7 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                         </span>
                       </div>
                       <div
+                        className="summaryHidden opinionSummary160Class"
                         dir="auto"
                         style={
                           Object {
@@ -2703,7 +2936,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                     </div>
                   </div>
                 </div>
-                <div>
+                <div
+                  className="opinionImageContainerClass"
+                >
                   <div>
                     <div
                       style={
@@ -2753,9 +2988,15 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
             </div>
           </a>
         </div>
-        <div />
-        <div>
-          <div>
+        <div
+          className="responsive-styles__component-fbPFZZ idoqLg"
+        />
+        <div
+          className="responsive-styles__component-fbPFZZ kUuqRI"
+        >
+          <div
+            className="responsive-styles__component-fbPFZZ fEqtGp"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/take-expensive-trident-out-of-mod-budget-hammond-urged-ztsxlskj2"
               style={
@@ -2764,9 +3005,13 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -2812,7 +3057,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
@@ -2867,7 +3114,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
               </div>
             </a>
           </div>
-          <div>
+          <div
+            className="responsive-styles__component-fbPFZZ eRVfAk"
+          >
             <a
               href="https://www.uat-thetimes.co.uk/article/size-matters-so-ministers-must-prove-they-are-serious-about-defence-bhs0jnw6d"
               style={
@@ -2876,9 +3125,13 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                 }
               }
             >
-              <div>
+              <div
+                className="responsive-styles__component-fbPFZZ woNlo"
+              >
                 <div>
-                  <div>
+                  <div
+                    className="supportImageContainerClass"
+                  >
                     <div>
                       <div
                         style={
@@ -2924,7 +3177,9 @@ exports[`10a. Opinion and two template: Render one opinion and two support relat
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div
+                    className="supportContentContainerClass"
+                  >
                     <div>
                       <div>
                         <div
